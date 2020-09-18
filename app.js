@@ -13,7 +13,6 @@ showMovies(apiUrl);
 function showMovies(url){
     fetch(url).then(res => res.json())
     .then(function(data){
-    console.log(data.results);
     data.results.forEach(element => {
         // Creating elements for each movie.
         const el = document.createElement('div');
